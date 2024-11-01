@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d3d1b9;
+    color: black;
+}
+
+.container {
+    padding: 10px;
+}
+
+.lsunderknapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.lsunderknapper p {
+    margin: 0 15px;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 15px;
+    color: #d3d1b9;
+    transition: background-color 0.3s;
+}
+
+.lsunderknapper p:hover {
+    background-color: #d3d1b9;
+    color: black;
+}
+
+.tekstommuseum p {
+    font-size: 14px;
+}
+
+.bilder2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.bilder2 img {
+    max-width: 150px;
+    height: auto;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .lstittel h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .lsunderknapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lsunderknapper p {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+
+    #hovedbilde {
+        width: 100%;
+        height: auto;
+    }
+
+    .tekstommuseum {
+        text-align: center;
+    }
+
+    .bilder2 {
+        flex-direction: column;
+    }
+}
